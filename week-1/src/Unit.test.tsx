@@ -23,7 +23,7 @@ describe('App 컴포넌트 테스트', () => {
     const button = screen.getByText('검색');
     expect(button).toBeInTheDocument();
   });
-  it('책이 존재할 경우 알맞은 멘트가 출력되는지 테스트', () => {
+  it('책이 존재할 경우, 멘트 출력되는지 테스트', () => {
     render(<App />);
 
     // 입력 필드 가져오기
@@ -42,7 +42,7 @@ describe('App 컴포넌트 테스트', () => {
     ).toBeInTheDocument();
   });
 
-  it('책이 존재하지 않을 경우 존재하지 않는다는 멘트 출력', () => {
+  it('책이 존재하지 않을 경우, 멘트 출력되는지 테스트', () => {
     render(<App />);
 
     const input = screen.getByPlaceholderText(
