@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`검색 컴포넌트 스냅샷 테스트 > 검색 버튼 클릭 후 결과가 표시된 상태를 스냅샷으로 저장 1`] = `
+<div>
+  <input
+    placeholder="책을 검색해주세요"
+    value="리액트"
+  />
+  <button>
+    검색
+  </button>
+  <div>
+    리액트을 찾을 수 없습니다.
+  </div>
+</div>
+`;
+
+exports[`검색 컴포넌트 스냅샷 테스트 > 검색 버튼 클릭 후 결과가 표시된 상태를 스냅샷으로 저장 2`] = `
+<div>
+  <input
+    placeholder="책을 검색해주세요"
+    value="리액트"
+  />
+  <button
+    style="background-color: red;"
+  >
+    검색
+  </button>
+  <div>
+    리액트을 찾을 수 없습니다.
+  </div>
+</div>
+`;
+
+exports[`검색 컴포넌트 스냅샷 테스트 > 검색어 입력 후 렌더링 상태를 스냅샷으로 저장 1`] = `
+<div>
+  <input
+    placeholder="책을 검색해주세요"
+    value="리액트"
+  />
+  <button>
+    검색
+  </button>
+  <div />
+</div>
+`;
+
+exports[`검색 컴포넌트 스냅샷 테스트 > 초기 렌더링 상태를 스냅샷으로 저장 1`] = `
+<div>
+  <input
+    placeholder="책을 검색해주세요"
+    value=""
+  />
+  <button>
+    검색
+  </button>
+  <div />
+</div>
+`;
