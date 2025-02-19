@@ -3,7 +3,7 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - main
+      - main  ✅ main 브랜치에서 푸시될 때 실행
   pull_request:
     branches:
       - main
