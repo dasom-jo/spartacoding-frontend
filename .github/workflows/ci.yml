@@ -25,7 +25,9 @@ jobs:
         run: npm install
 
       - name: Build Application
+        working-directory: week-3
         run: npm run build
+
 
   unit_test:
     runs-on: ubuntu-latest
