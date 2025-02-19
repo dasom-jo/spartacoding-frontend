@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest';
 import { findMostFrequentChar } from './findMostFrequentChar.js';
-import { Text } from "./Text";
+import { Text } from "./Text.js";
 
 describe('findeMostFrequentChar', () => {
   test('가장 많이 등장하는 문자가 2개 이상일 때 첫번째 문자가 반환됩니다.', () => {

@@ -21,13 +21,12 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        working-directory: week-3  # ✅ `week-3` 폴더로 이동 후 실행
+        working-directory: week-3  # ✅ 모든 작업을 `week-3` 폴더에서 실행
         run: npm install
 
       - name: Build Application
         working-directory: week-3
         run: npm run build
-
 
   unit_test:
     runs-on: ubuntu-latest
@@ -37,9 +36,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
+        working-directory: week-3  # ✅ `week-3` 폴더에서 실행
         run: npm install
 
       - name: Run Unit Tests
+        working-directory: week-3
         run: npm run test:unit
 
   integration_test:
@@ -50,9 +51,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
+        working-directory: week-3  # ✅ `week-3` 폴더에서 실행
         run: npm install
 
       - name: Run Integration Tests
+        working-directory: week-3
         run: npm run test:integration
 
   code_quality:
@@ -63,7 +66,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
+        working-directory: week-3  # ✅ `week-3` 폴더에서 실행
         run: npm install
 
       - name: Run ESLint
+        working-directory: week-3
         run: npm run lint
