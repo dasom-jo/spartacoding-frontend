@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Dependencies
         working-directory: week-3  # ✅ 모든 작업을 `week-3` 폴더에서 실행
-        run: npm install
+        run: npm install --only=dev
 
       - name: Build Application
         working-directory: week-3
