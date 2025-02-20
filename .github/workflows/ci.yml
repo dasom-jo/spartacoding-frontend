@@ -39,7 +39,7 @@ jobs:
         working-directory: week-3  # ✅ `week-3` 폴더에서 실행
         run: npm install
 
-      - name: Debug: List files before running tests
+      - name: "Debug: List files before running tests"
         working-directory: week-3
         run: ls -R
 
