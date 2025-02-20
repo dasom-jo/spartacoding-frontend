@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:unit": "vitest --run 'src/**/*.spec.tsx' 'src/**/*.test.ts'",
+    "test:unit": "vitest --run 'src/*.spec.tsx' 'src/*.test.ts'",
     "test:integration": "vitest --run src/**/*.spec.ts"
   },
   "dependencies": {
